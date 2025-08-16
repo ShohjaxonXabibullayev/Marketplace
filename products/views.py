@@ -12,7 +12,7 @@ from django.http import HttpResponse
 @login_required(login_url='login')
 def new_product(request):
     if request.method == "GET":
-        form = NewProductForm(request.POST, request.FILES)
+        form = NewProductForm()
         return render(request, 'product_new.html', {'form': form})
     elif request.method == "POST":
         form = NewProductForm(data=request.POST, files=request.FILES)
