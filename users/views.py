@@ -10,7 +10,6 @@ from products.models import Product
 
 # Create your views here.
 
-
 class SignupView(UserPassesTestMixin, View):
     def get(self, request):
         return render(request, 'registration/signup.html', {'form': SignupForm()})
@@ -33,7 +32,8 @@ class SignupView(UserPassesTestMixin, View):
 class ProfileView(View):
     def get(self, request, username):
         user = get_object_or_404(CustomUser, username=username)
-        return render(request, 'profile.html', {'customuser': user})
+        products = Product.objects.filter(author=user)
+        return render(request, 'profile.html', {'customuser': user, "products": products})
 
 
 class UpdateProfileView(LoginRequiredMixin, View):

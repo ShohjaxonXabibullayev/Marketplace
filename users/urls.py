@@ -10,3 +10,4 @@ urlpatterns = [
     path('saveds', SavedView.as_view(), name='saveds'),
     path('recently-viewed', RecentlyViewedView.as_view(), name='recently_viewed')
 ]
+
