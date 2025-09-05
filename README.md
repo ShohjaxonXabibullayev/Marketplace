@@ -20,7 +20,7 @@
 
 🖥️ Localhost’da ishga tushirish
 
-1️⃣ Stolda papka ochib olish va uninig ichiga kirib cmd ni ochib olish kerak
+1️⃣ Ish Stolda papka ochib olish va uninig ichiga kirib cmd ni ochib olish kerak
 
 2️⃣ Loyihani yuklab olish cmd iga git clone https://github.com/ShohjaxonXabibullayev/Logitech deb yozasiz
 
